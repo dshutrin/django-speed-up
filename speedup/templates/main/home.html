@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Вот все посты из базы данных:</h1>
+
+    {% for post in posts %}
+
+        <h3>{{ post.title }}</h3>
+        <img src="/media/{{ post.media }}" alt="">
+        <span>{{ post.body }}</span>
+        <br>
+        <br>
+        <br>
+
+    {% endfor %}
+
+</body>
+</html>
